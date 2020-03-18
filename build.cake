@@ -2,17 +2,12 @@
 #addin "nuget:?package=Newtonsoft.Json&version=11.0.2"
 #addin "nuget:?package=Cake.SqlServer"
 
-public class DatabaseSettings
-{
-    public string ConnectionString { get; set; }
-    public string DbCreationPath { get; set; }
-}
-
+#load "ConfigModels/models.cake"
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
 
-var target = Argument("target", "CreateDatabase");
+var target = Argument("target", "create-database");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -21,14 +16,12 @@ var target = Argument("target", "CreateDatabase");
 //////////////////////////////////////////////////////////////////////
 // TASKS
 //////////////////////////////////////////////////////////////////////
-Task("CreateDatabase")
+Task("create-database")
     .Does(() =>
 {
     var settings = DeserializeJsonFromFile<DatabaseSettings>(@"settings.json");
-    string dbName = "AntiBlog";
-
-
-    if(DatabaseExists(settings.ConnectionString, dbName)){
+  
+    if(DatabaseExists(settings.ConnectionString, settings.DbName)){
         Information("Database already exist");
     }
     else
@@ -37,7 +30,7 @@ Task("CreateDatabase")
                         .WithPrimaryFile(settings.DbCreationPath + "AntiBlog.mdf")
                         .WithLogFile(settings.DbCreationPath + "AntiBlog.ldf");
 
-      CreateDatabase(settings.ConnectionString, dbName, createSettings);  
+      CreateDatabase(settings.ConnectionString, settings.DbName, createSettings);  
     }
 });
 
