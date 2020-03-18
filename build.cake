@@ -7,7 +7,8 @@
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
 
-var target = Argument("target", "create-database");
+var target = Argument("target", "create-tables");
+var settings = DeserializeJsonFromFile<DatabaseSettings>(@"settings.json");
 
 //////////////////////////////////////////////////////////////////////
 // PREPARATION
@@ -16,10 +17,18 @@ var target = Argument("target", "create-database");
 //////////////////////////////////////////////////////////////////////
 // TASKS
 //////////////////////////////////////////////////////////////////////
+
+Task("create-tables")
+.IsDependentOn("create-database")
+    .Does(() =>
+{
+    ExecuteSqlFile(settings.ConnectionString, "sql/ddl.sql");  
+});
+
+
 Task("create-database")
     .Does(() =>
 {
-    var settings = DeserializeJsonFromFile<DatabaseSettings>(@"settings.json");
   
     if(DatabaseExists(settings.ConnectionString, settings.DbName)){
         Information("Database already exist");
@@ -33,6 +42,7 @@ Task("create-database")
       CreateDatabase(settings.ConnectionString, settings.DbName, createSettings);  
     }
 });
+
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
