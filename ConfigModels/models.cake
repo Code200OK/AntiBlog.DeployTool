@@ -4,3 +4,8 @@ public class DatabaseSettings
     public string DbCreationPath { get; set; }
     public string DbName { get; set; }
 }
+
+internal class Roles
+{
+        public string[] Values { get; set; }
+}

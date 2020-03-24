@@ -29,7 +29,6 @@ Task("create-tables")
 Task("create-database")
     .Does(() =>
 {
-  
     if(DatabaseExists(settings.ConnectionString, settings.DbName)){
         Information("Database already exist");
     }
@@ -43,6 +42,11 @@ Task("create-database")
     }
 });
 
+Task("drop-database")
+    .Does(() =>
+{
+    DropDatabase(settings.ConnectionString, settings.DbName);
+});
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
