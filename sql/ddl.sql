@@ -1,9 +1,11 @@
 USE AntiBlog
 
-CREATE TABLE [Role]
+create table [Role]
 (
-    Id   INT IDENTITY NOT NULL PRIMARY KEY,
-    Name VARCHAR(50)  NOT NULL
+    Id                  int identity primary key,
+    Name                varchar(50) not null,
+    ResponsibilityLevel varchar(100),
+    AgeConstraint       int
 )
 
 CREATE TABLE [User]

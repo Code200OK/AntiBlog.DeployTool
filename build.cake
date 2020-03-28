@@ -3,11 +3,12 @@
 #addin "nuget:?package=Cake.SqlServer"
 
 #load "ConfigModels/models.cake"
+#load "sql/sql utils/QueryInteraction.cake"
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
 
-var target = Argument("target", "create-tables");
+var target = Argument("target", "populate-data");
 var settings = DeserializeJsonFromFile<DatabaseSettings>(@"settings.json");
 
 //////////////////////////////////////////////////////////////////////
@@ -17,6 +18,14 @@ var settings = DeserializeJsonFromFile<DatabaseSettings>(@"settings.json");
 //////////////////////////////////////////////////////////////////////
 // TASKS
 //////////////////////////////////////////////////////////////////////
+
+Task("populate-data")
+.IsDependentOn("create-tables")
+    .Does(() =>
+{
+    QueryInteraction.Insert<Role>("Role", settings.TestConnString);
+});
+
 
 Task("create-tables")
 .IsDependentOn("create-database")
