@@ -44,8 +44,8 @@ Task("create-database")
     else
     {
       var createSettings = new CreateDatabaseSettings()
-                        .WithPrimaryFile(settings.DbCreationPath + "AntiBlog.mdf")
-                        .WithLogFile(settings.DbCreationPath + "AntiBlog.ldf");
+                        .WithPrimaryFile(settings.DbCreationPath + settings.DbName + ".mdf")
+                        .WithLogFile(settings.DbCreationPath + settings.DbName + ".ldf");
 
       CreateDatabase(settings.ConnectionString, settings.DbName, createSettings);  
     }

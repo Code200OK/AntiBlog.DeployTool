@@ -2,5 +2,5 @@
   "ConnectionString": "Data Source=(LocalDB)\\MSSQLLocalDB;Integrated Security=True",
   "TestConnString": "Data Source=(LocalDB)\\MSSQLLocalDB;Database=AntiBlog;Integrated Security=True",
   "DbCreationPath": "C:\\Program Files\\Microsoft SQL Server\\MSSQL14.MSSQLSERVER\\MSSQL\\DATA\\",
-  "DbName": "AntiBlog"
+  "DbName": "CampusDb"
 }
