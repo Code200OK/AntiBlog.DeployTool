@@ -3,6 +3,7 @@
 #addin "nuget:?package=Cake.SqlServer"
 
 #load "ConfigModels/models.cake"
+#load "DBEntities/*.cake"
 #load "sql/sql utils/QueryInteraction.cake"
 //////////////////////////////////////////////////////////////////////
 // ARGUMENTS
