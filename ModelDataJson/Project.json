@@ -1,11 +1,602 @@
 [
-    {
-      "Name": "teacher"
-    },
-    {
-      "Name": "student"
-    },
-    {
-      "Name": "admin"
-    }
-  ]
+  {
+    "Name": "QUIZMO",
+    "Color": "green",
+    "UserId": 22,
+    "StatusId": 3
+  },
+  {
+    "Name": "CENTREGY",
+    "Color": "blue",
+    "UserId": 60,
+    "StatusId": 3
+  },
+  {
+    "Name": "ZIALACTIC",
+    "Color": "brown",
+    "UserId": 62,
+    "StatusId": 3
+  },
+  {
+    "Name": "ADORNICA",
+    "Color": "brown",
+    "UserId": 38,
+    "StatusId": 3
+  },
+  {
+    "Name": "PULZE",
+    "Color": "blue",
+    "UserId": 96,
+    "StatusId": 2
+  },
+  {
+    "Name": "TECHADE",
+    "Color": "brown",
+    "UserId": 92,
+    "StatusId": 1
+  },
+  {
+    "Name": "CYCLONICA",
+    "Color": "blue",
+    "UserId": 40,
+    "StatusId": 1
+  },
+  {
+    "Name": "ZAGGLE",
+    "Color": "blue",
+    "UserId": 84,
+    "StatusId": 3
+  },
+  {
+    "Name": "EXOSPACE",
+    "Color": "blue",
+    "UserId": 40,
+    "StatusId": 1
+  },
+  {
+    "Name": "VERAQ",
+    "Color": "blue",
+    "UserId": 15,
+    "StatusId": 3
+  },
+  {
+    "Name": "MANGLO",
+    "Color": "green",
+    "UserId": 81,
+    "StatusId": 1
+  },
+  {
+    "Name": "SAVVY",
+    "Color": "brown",
+    "UserId": 58,
+    "StatusId": 2
+  },
+  {
+    "Name": "MANTRO",
+    "Color": "green",
+    "UserId": 10,
+    "StatusId": 3
+  },
+  {
+    "Name": "QABOOS",
+    "Color": "brown",
+    "UserId": 91,
+    "StatusId": 1
+  },
+  {
+    "Name": "ZANILLA",
+    "Color": "blue",
+    "UserId": 70,
+    "StatusId": 1
+  },
+  {
+    "Name": "DATACATOR",
+    "Color": "brown",
+    "UserId": 77,
+    "StatusId": 3
+  },
+  {
+    "Name": "HARMONEY",
+    "Color": "green",
+    "UserId": 43,
+    "StatusId": 2
+  },
+  {
+    "Name": "CEMENTION",
+    "Color": "blue",
+    "UserId": 1,
+    "StatusId": 3
+  },
+  {
+    "Name": "ESCHOIR",
+    "Color": "green",
+    "UserId": 6,
+    "StatusId": 3
+  },
+  {
+    "Name": "GEOFORM",
+    "Color": "blue",
+    "UserId": 79,
+    "StatusId": 2
+  },
+  {
+    "Name": "LOTRON",
+    "Color": "blue",
+    "UserId": 9,
+    "StatusId": 1
+  },
+  {
+    "Name": "HINWAY",
+    "Color": "green",
+    "UserId": 41,
+    "StatusId": 2
+  },
+  {
+    "Name": "VENOFLEX",
+    "Color": "blue",
+    "UserId": 4,
+    "StatusId": 1
+  },
+  {
+    "Name": "FIBRODYNE",
+    "Color": "brown",
+    "UserId": 45,
+    "StatusId": 2
+  },
+  {
+    "Name": "TRASOLA",
+    "Color": "blue",
+    "UserId": 27,
+    "StatusId": 2
+  },
+  {
+    "Name": "ARCHITAX",
+    "Color": "blue",
+    "UserId": 100,
+    "StatusId": 3
+  },
+  {
+    "Name": "ZYTRAC",
+    "Color": "brown",
+    "UserId": 23,
+    "StatusId": 3
+  },
+  {
+    "Name": "ZANYMAX",
+    "Color": "green",
+    "UserId": 5,
+    "StatusId": 3
+  },
+  {
+    "Name": "GLUID",
+    "Color": "brown",
+    "UserId": 53,
+    "StatusId": 2
+  },
+  {
+    "Name": "ZOINAGE",
+    "Color": "green",
+    "UserId": 81,
+    "StatusId": 1
+  },
+  {
+    "Name": "COGENTRY",
+    "Color": "brown",
+    "UserId": 13,
+    "StatusId": 2
+  },
+  {
+    "Name": "REALMO",
+    "Color": "brown",
+    "UserId": 7,
+    "StatusId": 1
+  },
+  {
+    "Name": "QUANTALIA",
+    "Color": "green",
+    "UserId": 44,
+    "StatusId": 2
+  },
+  {
+    "Name": "SOLAREN",
+    "Color": "green",
+    "UserId": 4,
+    "StatusId": 3
+  },
+  {
+    "Name": "BALOOBA",
+    "Color": "brown",
+    "UserId": 36,
+    "StatusId": 3
+  },
+  {
+    "Name": "TALKOLA",
+    "Color": "green",
+    "UserId": 55,
+    "StatusId": 1
+  },
+  {
+    "Name": "COMTEXT",
+    "Color": "green",
+    "UserId": 61,
+    "StatusId": 1
+  },
+  {
+    "Name": "BIOSPAN",
+    "Color": "brown",
+    "UserId": 90,
+    "StatusId": 2
+  },
+  {
+    "Name": "CONFERIA",
+    "Color": "blue",
+    "UserId": 46,
+    "StatusId": 2
+  },
+  {
+    "Name": "SOPRANO",
+    "Color": "brown",
+    "UserId": 82,
+    "StatusId": 1
+  },
+  {
+    "Name": "REPETWIRE",
+    "Color": "brown",
+    "UserId": 66,
+    "StatusId": 3
+  },
+  {
+    "Name": "ISONUS",
+    "Color": "brown",
+    "UserId": 100,
+    "StatusId": 3
+  },
+  {
+    "Name": "ZENTHALL",
+    "Color": "brown",
+    "UserId": 24,
+    "StatusId": 3
+  },
+  {
+    "Name": "TELEQUIET",
+    "Color": "green",
+    "UserId": 21,
+    "StatusId": 2
+  },
+  {
+    "Name": "VIXO",
+    "Color": "blue",
+    "UserId": 5,
+    "StatusId": 2
+  },
+  {
+    "Name": "EMERGENT",
+    "Color": "brown",
+    "UserId": 46,
+    "StatusId": 1
+  },
+  {
+    "Name": "ENERFORCE",
+    "Color": "blue",
+    "UserId": 89,
+    "StatusId": 2
+  },
+  {
+    "Name": "CUBICIDE",
+    "Color": "green",
+    "UserId": 53,
+    "StatusId": 2
+  },
+  {
+    "Name": "ZILLACOM",
+    "Color": "brown",
+    "UserId": 48,
+    "StatusId": 3
+  },
+  {
+    "Name": "SATIANCE",
+    "Color": "brown",
+    "UserId": 51,
+    "StatusId": 2
+  },
+  {
+    "Name": "ZILLADYNE",
+    "Color": "green",
+    "UserId": 87,
+    "StatusId": 3
+  },
+  {
+    "Name": "GINKOGENE",
+    "Color": "green",
+    "UserId": 17,
+    "StatusId": 1
+  },
+  {
+    "Name": "EXOPLODE",
+    "Color": "brown",
+    "UserId": 87,
+    "StatusId": 2
+  },
+  {
+    "Name": "REALYSIS",
+    "Color": "blue",
+    "UserId": 86,
+    "StatusId": 1
+  },
+  {
+    "Name": "GAPTEC",
+    "Color": "green",
+    "UserId": 29,
+    "StatusId": 2
+  },
+  {
+    "Name": "NORSUL",
+    "Color": "green",
+    "UserId": 100,
+    "StatusId": 1
+  },
+  {
+    "Name": "GEEKOL",
+    "Color": "brown",
+    "UserId": 32,
+    "StatusId": 3
+  },
+  {
+    "Name": "ISOSWITCH",
+    "Color": "blue",
+    "UserId": 30,
+    "StatusId": 3
+  },
+  {
+    "Name": "MIRACLIS",
+    "Color": "green",
+    "UserId": 15,
+    "StatusId": 2
+  },
+  {
+    "Name": "XURBAN",
+    "Color": "green",
+    "UserId": 36,
+    "StatusId": 2
+  },
+  {
+    "Name": "ZILLANET",
+    "Color": "green",
+    "UserId": 12,
+    "StatusId": 2
+  },
+  {
+    "Name": "HELIXO",
+    "Color": "green",
+    "UserId": 23,
+    "StatusId": 3
+  },
+  {
+    "Name": "MAGNEATO",
+    "Color": "blue",
+    "UserId": 70,
+    "StatusId": 3
+  },
+  {
+    "Name": "FILODYNE",
+    "Color": "green",
+    "UserId": 74,
+    "StatusId": 2
+  },
+  {
+    "Name": "MIRACULA",
+    "Color": "blue",
+    "UserId": 59,
+    "StatusId": 2
+  },
+  {
+    "Name": "NUTRALAB",
+    "Color": "brown",
+    "UserId": 58,
+    "StatusId": 2
+  },
+  {
+    "Name": "COMSTRUCT",
+    "Color": "green",
+    "UserId": 83,
+    "StatusId": 1
+  },
+  {
+    "Name": "QUONK",
+    "Color": "green",
+    "UserId": 9,
+    "StatusId": 3
+  },
+  {
+    "Name": "JIMBIES",
+    "Color": "brown",
+    "UserId": 70,
+    "StatusId": 1
+  },
+  {
+    "Name": "POSHOME",
+    "Color": "green",
+    "UserId": 94,
+    "StatusId": 3
+  },
+  {
+    "Name": "LUNCHPOD",
+    "Color": "blue",
+    "UserId": 69,
+    "StatusId": 2
+  },
+  {
+    "Name": "PIGZART",
+    "Color": "brown",
+    "UserId": 27,
+    "StatusId": 2
+  },
+  {
+    "Name": "URBANSHEE",
+    "Color": "blue",
+    "UserId": 100,
+    "StatusId": 1
+  },
+  {
+    "Name": "DIGIGEN",
+    "Color": "green",
+    "UserId": 67,
+    "StatusId": 1
+  },
+  {
+    "Name": "EVIDENDS",
+    "Color": "brown",
+    "UserId": 33,
+    "StatusId": 3
+  },
+  {
+    "Name": "LUMBREX",
+    "Color": "blue",
+    "UserId": 91,
+    "StatusId": 2
+  },
+  {
+    "Name": "GRONK",
+    "Color": "green",
+    "UserId": 77,
+    "StatusId": 1
+  },
+  {
+    "Name": "FLYBOYZ",
+    "Color": "brown",
+    "UserId": 54,
+    "StatusId": 2
+  },
+  {
+    "Name": "PORTICA",
+    "Color": "green",
+    "UserId": 62,
+    "StatusId": 2
+  },
+  {
+    "Name": "INRT",
+    "Color": "green",
+    "UserId": 59,
+    "StatusId": 3
+  },
+  {
+    "Name": "ECSTASIA",
+    "Color": "blue",
+    "UserId": 13,
+    "StatusId": 2
+  },
+  {
+    "Name": "PLAYCE",
+    "Color": "brown",
+    "UserId": 59,
+    "StatusId": 1
+  },
+  {
+    "Name": "NITRACYR",
+    "Color": "brown",
+    "UserId": 87,
+    "StatusId": 1
+  },
+  {
+    "Name": "ELENTRIX",
+    "Color": "blue",
+    "UserId": 80,
+    "StatusId": 1
+  },
+  {
+    "Name": "PHUEL",
+    "Color": "green",
+    "UserId": 57,
+    "StatusId": 2
+  },
+  {
+    "Name": "QUALITERN",
+    "Color": "brown",
+    "UserId": 65,
+    "StatusId": 3
+  },
+  {
+    "Name": "ENJOLA",
+    "Color": "green",
+    "UserId": 24,
+    "StatusId": 1
+  },
+  {
+    "Name": "NIMON",
+    "Color": "green",
+    "UserId": 74,
+    "StatusId": 2
+  },
+  {
+    "Name": "MEMORA",
+    "Color": "blue",
+    "UserId": 58,
+    "StatusId": 1
+  },
+  {
+    "Name": "ISOLOGICA",
+    "Color": "blue",
+    "UserId": 59,
+    "StatusId": 3
+  },
+  {
+    "Name": "TROPOLI",
+    "Color": "green",
+    "UserId": 79,
+    "StatusId": 3
+  },
+  {
+    "Name": "XYMONK",
+    "Color": "brown",
+    "UserId": 38,
+    "StatusId": 3
+  },
+  {
+    "Name": "MAROPTIC",
+    "Color": "blue",
+    "UserId": 87,
+    "StatusId": 3
+  },
+  {
+    "Name": "AVENETRO",
+    "Color": "green",
+    "UserId": 1,
+    "StatusId": 2
+  },
+  {
+    "Name": "TECHMANIA",
+    "Color": "blue",
+    "UserId": 11,
+    "StatusId": 2
+  },
+  {
+    "Name": "SPRINGBEE",
+    "Color": "green",
+    "UserId": 19,
+    "StatusId": 2
+  },
+  {
+    "Name": "GONKLE",
+    "Color": "green",
+    "UserId": 48,
+    "StatusId": 2
+  },
+  {
+    "Name": "ACCUPRINT",
+    "Color": "green",
+    "UserId": 11,
+    "StatusId": 2
+  },
+  {
+    "Name": "PETIGEMS",
+    "Color": "blue",
+    "UserId": 56,
+    "StatusId": 2
+  },
+  {
+    "Name": "KNOWLYSIS",
+    "Color": "blue",
+    "UserId": 29,
+    "StatusId": 3
+  }
+]

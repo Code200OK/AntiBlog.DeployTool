@@ -24,7 +24,37 @@ Task("populate-data")
 .IsDependentOn("create-tables")
     .Does(() =>
 {
-    QueryInteraction.Insert<Role>("Role", settings.TestConnString);
+ foreach (var tableName in new[] {"Role", "Status", "AppUser", "Project", "Task"})
+            {
+                switch (tableName)
+                {
+                    case "Role":
+                    {
+                        QueryInteraction.Insert<Role>(tableName, settings.TestConnString);
+                        break;
+                    }
+                    case "Status":
+                    {
+                         QueryInteraction.Insert<Status>(tableName, settings.TestConnString);
+                        break;
+                    }
+                    case "AppUser":
+                    {
+                         QueryInteraction.Insert<AppUser>(tableName, settings.TestConnString);
+                        break;
+                    }
+                    case "Project":
+                    {
+                        QueryInteraction.Insert<Project>(tableName, settings.TestConnString);
+                        break;
+                    }
+                    case "Task":
+                    {
+                        QueryInteraction.Insert<Task>(tableName,settings.TestConnString);
+                        break;
+                    }
+                }
+            }
 });
 
 

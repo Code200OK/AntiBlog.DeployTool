@@ -1,18 +1,18 @@
- public class Project : IDataModel
+  public class Project : IDataModel
     {
         public string Name { get; set; }
 
         public string Color { get; set; }
 
-        public bool Status { get; set; }
-
         public int UserId { get; set; }
+
+        public bool StatusId { get; set; }
 
         public object[] GetModelData()
         {
             return new object[]
             {
-                Name, Color, Status, UserId
+                Name, Color, UserId, StatusId
             };
         }
     }

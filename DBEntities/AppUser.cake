@@ -1,5 +1,5 @@
-public class User : IDataModel
-{
+    public class AppUser : IDataModel
+    {
         public string Name { get; set; }
 
         public string Surname { get; set; }
@@ -10,7 +10,7 @@ public class User : IDataModel
 
         public string PasswordHash { get; set; }
 
-        public DateTime RegistrationDate { get; set; }
+        public string RegistrationDate { get; set; }
 
         public int RoleId { get; set; }
 
@@ -21,4 +21,4 @@ public class User : IDataModel
                 Name, Surname, Email, Login, PasswordHash, RegistrationDate, RoleId
             };
         }
-}
+    }

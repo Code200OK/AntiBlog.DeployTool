@@ -1,4 +1,4 @@
- public class Role : IDataModel
+  public class Status : IDataModel
     {
         public string Name { get; set; }
 
