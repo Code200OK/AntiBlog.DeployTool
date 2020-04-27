@@ -37,7 +37,7 @@ CREATE TABLE [Project]
 )
 GO
 
-CREATE TABLE [Task]
+CREATE TABLE [UserTask]
 (
     Id          INT IDENTITY  NOT NULL PRIMARY KEY,
     Description NVARCHAR(MAX) NOT NULL,

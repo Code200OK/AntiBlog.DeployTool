@@ -1,4 +1,4 @@
-  public class Task : IDataModel
+  public class UserTask : IDataModel
     {
         public string Description { get; set; }
 

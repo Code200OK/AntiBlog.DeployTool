@@ -24,7 +24,7 @@ Task("populate-data")
 .IsDependentOn("create-tables")
     .Does(() =>
 {
- foreach (var tableName in new[] {"Role", "Status", "AppUser", "Project", "Task"})
+ foreach (var tableName in new[] {"Role", "Status", "AppUser", "Project", "UserTask"})
             {
                 switch (tableName)
                 {
@@ -48,9 +48,9 @@ Task("populate-data")
                         QueryInteraction.Insert<Project>(tableName, settings.TestConnString);
                         break;
                     }
-                    case "Task":
+                    case "UserTask":
                     {
-                        QueryInteraction.Insert<Task>(tableName,settings.TestConnString);
+                        QueryInteraction.Insert<UserTask>(tableName,settings.TestConnString);
                         break;
                     }
                 }
