@@ -62,11 +62,12 @@ Task("create-tables")
 .IsDependentOn("create-database")
     .Does(() =>
 {
-    ExecuteSqlFile(settings.ConnectionString, "sql/ddl.sql");  
+    ExecuteSqlFile(settings.ConnectionString, "sql/SQLServer/ddl.sql");  
 });
 
 
 Task("create-database")
+.IsDependentOn("drop-database")
     .Does(() =>
 {
     if(DatabaseExists(settings.ConnectionString, settings.DbName)){

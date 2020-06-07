@@ -16,13 +16,14 @@ GO
 
 CREATE TABLE [AppUser]
 (
-    Id               INT IDENTITY NOT NULL PRIMARY KEY,
-    Name             VARCHAR(80)  NOT NULL,
-    Surname          VARCHAR(80)  NULL,
-    Email            VARCHAR(100) NOT NULL,
-    Login            VARCHAR(60)  NOT NULL,
-    PasswordHash     VARCHAR(MAX) NOT NULL,
-    RegistrationDate DATETIME     NOT NULL,
+    Id               INT IDENTITY   NOT NULL PRIMARY KEY,
+    Name             VARCHAR(80)    NOT NULL,
+    Surname          VARCHAR(80)    NULL,
+    Email            VARCHAR(100)   NOT NULL,
+    Login            VARCHAR(60)    NOT NULL UNIQUE,
+    PasswordHash     VARBINARY(MAX) NOT NULL,
+    PasswordSalt     VARBINARY(MAX) NOT NULL,
+    RegistrationDate DATETIME       NOT NULL,
     RoleId           INT FOREIGN KEY REFERENCES [Role] (Id) ON DELETE CASCADE
 )
 GO
