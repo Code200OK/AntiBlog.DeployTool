@@ -8,7 +8,9 @@
 
         public string Login { get; set; }
 
-        public string PasswordHash { get; set; }
+        public byte[] PasswordHash { get; set; }
+
+        public byte[] PasswordSalt { get; set; }
 
         public string RegistrationDate { get; set; }
 
@@ -18,7 +20,7 @@
         {
             return new object[]
             {
-                Name, Surname, Email, Login, PasswordHash, RegistrationDate, RoleId
+                Name, Surname, Email, Login, PasswordHash, PasswordSalt, RegistrationDate, RoleId
             };
         }
     }
